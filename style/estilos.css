@@ -2,8 +2,12 @@ body {
     background-color: rgb(214, 201, 158);
     font-family: Arial, Helvetica, sans-serif;
 }
-h1, h2 {
+h1 {
     font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.80rem;
 }
 .header {
     display: flex;
@@ -11,7 +15,7 @@ h1, h2 {
     justify-content: space-between;
     background-color: rgb(46, 42, 37);
     border: solid 2px black;
-    width: 100%;
+    width: 100vw;
     height: 10%;
     position: sticky;
     top: 5px;
@@ -66,10 +70,15 @@ ul li a {
 }
 
 /* Section Alojamiento y Coworking*/
-
-.secciones{
-    margin: 5% 0%;
+.color_background_alojamiento {
+    background-color: #8eb2ac;
+    color: rgb(46, 42, 37);
+    width: 100vw;
+    margin: 0vws;
 }
+/*.secciones{
+    margin: 5% 0%;
+}*/
 
 .lista {
     display: inline-block;
@@ -87,7 +96,7 @@ ul li a {
     flex-direction: row;
     }
 .carrusel_fotos_formato{
-    margin: 2%;
+    margin: 10px;
     width: 50vw;
     height: 50vh;
 }
