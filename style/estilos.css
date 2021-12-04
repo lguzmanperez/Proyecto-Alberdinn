@@ -149,6 +149,7 @@ div#foto_campana{
 }
 
 div#formulario {
+    width: 70%;
     grid-area: formulario;
 
 }
