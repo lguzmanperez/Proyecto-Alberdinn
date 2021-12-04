@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style/estilos.css">
     <title>Alberdinn</title>
 </head>
@@ -35,12 +36,17 @@
     </header>
     <section class="nosotros" id="Nosotros">
         <h1 class="color_fuente"> Nosotros </h1>
-        <div>
-            <img class="box_mod_fotos" src="./imagenes/puertas_habitaciones.jpeg" alt="Foto de Alberdinn">
-        </div>
-    
-        <p class="parrafo_nosotros"  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe inventore molestias ullam amet explicabo aperiam alias quos. Deserunt asperiores explicabo voluptates numquam ab voluptatum possimus in! Earum, ipsa quo? Quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus assumenda dicta doloremque possimus animi vel, sequi quos maxime totam accusantium eligendi nemo modi ipsum perspiciatis nam minus. Animi, architecto aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, rem aspernatur labore odit quas modi est possimus nesciunt repellendus asperiores doloremque maxime minima nemo eveniet repellat, ullam optio. Quae, voluptatum.</p>
-
+    <div class="container">
+        <div class="row">
+                <div class="col-md-6 col-xs-6">
+                    <img class="box_mod_fotos" src="./imagenes/puertas_habitaciones.jpeg" alt="Foto de Alberdinn">
+                </div>
+                
+                <div class= "col-md-6 col-xs-6" > 
+                    <p class="parrafo_nosotros ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque suscipit nobis error vel? Exercitationem id officia debitis ipsam iure, quos excepturi illo voluptas, corrupti repellat eveniet tempore ea sed.</p>
+                </div>
+            </div>
+    </div>
     </section>
     <section class="secciones color_fuente color_background_alojamiento" id= "Alojamiento">
         <h1>Alojate en Alberdinn</h1>
@@ -59,19 +65,49 @@
             <li class="lista_li">Servicio de limpieza diario</li>
             <li class="lista_li">Eventos culturales in-house</li>
         </ul>
-    
-        <div class="secciones color_fuente color_background_alojamiento" id= "Nuestras instalaciones">
+       
+   <div class="margen_carrusel">    
+        <div class="row justify-content-center">
+        <div class="col-sm-8">
+            <div id="carouselExampleControls" class="carousel slide carousel_mio" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenes/cuchetas.jpeg" class="d-block w-100" alt="cuchetas">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/cama_sola.jpeg" class="d-block w-100" alt="cama individual">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/cocina.jpeg" class="d-block w-100" alt="Cocina">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+   
+         </div>
+    </div>
+       <!-- <div class="secciones color_fuente color_background_alojamiento" id= "Nuestras instalaciones">
             <h2>Nuestras instalaciones</h2>
             <article class="carrusel_fotos" >
                 <img class="carrusel_fotos_formato" src="./imagenes/cuchetas.jpeg" alt="Foto de camas">
                 <img class="carrusel_fotos_formato" src="./imagenes/cama_sola.jpeg" alt="Foto de cama individual">
                 <img class="carrusel_fotos_formato" src="./imagenes/cocina.jpeg" alt="Foto de cocina">
             </article>
-        </div>
+        </div>-->
     </section>
 
     <section class="secciones color_fuente" id="coworking">
+       <div class="margen_titulo">
         <h1>Estudiá y trabajá en el coworking de Alberdinn</h1>
+       </div> 
         <h2>Servicios incluidos</h2>
         <ul class="lista">
             <li class="lista_li">Espacios de trabajo móviles o fijos</li>
@@ -87,14 +123,87 @@
         </ul>
     </section>
 
-    <section  class="secciones color_fuente">
+    <section  class="secciones color_fuente carousel_mio">
+       <div class="margen_titulo">
         <h2>Nuestras instalaciones</h2>
+       </div> 
         <!-- Aca va carrusel de fotos -->
-        <article class="carrusel_fotos" >
+     <div class="margen_carrusel">   
+            <div class="row justify-content-center">
+                <div class="col-sm-8">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenes/mesas_coworking.jpeg" class="d-block w-100" alt="mesas en el coworking">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/sala_reunion.jpeg" class="d-block w-100" alt="sala de reuniones">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/mesa_compu_copa.jpeg" class="d-block w-100" alt="Sala individual">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+            </div>
+    </div>
+       <!-- Pongo carousel de bootstrap-->  
+       <!-- <article class="carrusel_fotos" >
             <img class="carrusel_fotos_formato" src="./imagenes/mesas_coworking.jpeg" alt="Foto area comun coworking">
             <img class="carrusel_fotos_formato" src="./imagenes/mesa_compu_copa.jpeg" alt="Foto area individual de coworking">
             <img class="carrusel_fotos_formato" src="./imagenes/sala_reunion.jpeg" alt="Foto sala de reuniones">
-        </article>
+        </article>--> 
+    </section>
+
+    <section id="opiniones">
+        <div class="margen_titulo">
+            <h1>Opiniones de nuestros huespedes</h1>
+        </div>
+        <div class="formato_cards">
+            <div class="card-header">
+              Opinion
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Todo divino divino, seguro que volveré</p>
+                <footer class="blockquote-footer">María Callas de Chipre</footer>
+              </blockquote>
+            </div>
+          </div>
+
+
+          <div class="formato_cards">
+            <div class="card-header">
+              Opinión
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>La pasé bomba, un lugar muy acogedor y bien atendido por su dueña</p>
+                <footer class="blockquote-footer">Roberto Carlos de Hurlingham</footer>
+              </blockquote>
+            </div>
+          </div>
+
+
+          <div class="formato_cards">
+            <div class="card-header">
+              Opinión
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Todo esplendido, super recomendable</p>
+                <footer class="blockquote-footer">Javiera Mena de Valparaiso</footer>
+              </blockquote>
+            </div>
+          </div>
     </section>
 
     <footer class="footer">
@@ -102,6 +211,8 @@
         <p class= "color_fuente">Copyright 2021 Alberdinn </p>
         
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    
 </body>
 </html>
