@@ -1,0 +1,69 @@
+.formato_ubicacion{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "mapa descripcion";
+    align-items: center;
+    justify-content: space-between;
+}
+div {
+    grid-area: mapa;
+}
+aside{
+    grid-area: descripcion;
+}
+.parrafo_ubicación{
+    margin-left: 10px;
+    font-size: 1.30rem;
+}
+.foto_campana{
+    width: 100%;
+    height: 100%;
+}
+.formato_contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "foto_campana formulario";
+    column-gap: 5%;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+div#foto_campana{
+    grid-area: foto_campana;
+}
+
+div#formulario {
+    width: 70%;
+    grid-area: formulario;
+
+}
+.formato_formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1%;
+}
+.formato_formulario input {
+    color: rgb(46, 42, 37);
+    width: 70%;
+    margin-bottom: 2%;
+    border: rgb(46, 42, 37) 1px solid;
+    border-radius: 10px ;
+    padding: 3px;
+}
+
+textarea {
+    width: 70%;
+    border: rgb(46, 42, 37) 1px solid;
+    border-radius: 10px ;
+}
+/* Opiniones */
+.margen_titulo{
+    margin-top: 3%;
+}
+.formato_cards{
+    background-color: rgb(46, 42, 37);
+    color: rgb(214, 201, 158);
+}

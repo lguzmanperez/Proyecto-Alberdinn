@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-alberdinn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lguzmanperez/Proyecto-Alberdinn.git"
+  },
+  "author": "Leonardo Nicolas Guzmán Pérez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lguzmanperez/Proyecto-Alberdinn/issues"
+  },
+  "homepage": "https://github.com/lguzmanperez/Proyecto-Alberdinn#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

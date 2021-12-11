@@ -1,0 +1,37 @@
+.color_background_alojamiento {
+    
+    color: rgb(46, 42, 37);
+    width: 100%;
+    margin: 0vws;
+}
+.margen_carrusel{
+    margin-top: 2%;
+}
+/*.secciones{
+    margin: 5% 0%;
+}*/
+
+.lista {
+    display: inline-block;
+    
+    margin: 5px;
+    font-size: 1.30rem;
+}
+
+.lista_li{
+    margin: 5px;
+}
+
+.carrusel_fotos{
+    display: flex;
+    flex-direction: row;
+    }
+.carrusel_fotos_formato{
+    margin: 10px;
+    width: 50%;
+    height: 50%;
+}
+.carousel_mio{
+    width: 50%;
+    height: 50%;
+}

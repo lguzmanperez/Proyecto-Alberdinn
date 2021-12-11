@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(46, 42, 37);
+    border: solid 2px black;
+    width: 100%;
+    height: 10%;
+    position: sticky;
+    top: 5px;
+    z-index: 2;
+}
+
+.logo{
+width: 25%;
+height: 85%;
+}
+.formato_div_nav{ 
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: end;
+    
+    nav ul li {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+        border: solid 1px rgb(214, 201, 158);
+        list-style-type: none;  
+
+        a {
+            color:rgb(214, 201, 158);
+            text-decoration: none
+        }
+        a:hover {
+            color: rgb(46, 42, 37);
+            background-color: rgb(214, 201, 158);
+          }
+    }
+
+}
+
+
