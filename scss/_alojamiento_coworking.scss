@@ -21,8 +21,23 @@
 .lista_li{
     margin: 5px;
 }
-
 .carrusel_fotos{
+    display: flex;
+    flex-direction: row;
+}
+
+.carrusel_fotos_formato{
+    margin: 2%;
+    width: 30%;
+    height: 30%;
+}
+#foto_cocina {
+    margin: 2%;
+    width: 10%;
+    height: 10%;
+}
+
+/*.carrusel_fotos{
     display: flex;
     flex-direction: row;
     }
@@ -34,4 +49,4 @@
 .carousel_mio{
     width: 50%;
     height: 50%;
-}
+}*/

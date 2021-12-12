@@ -41,6 +41,13 @@
     iframe{
         width: 100%;
     }
+
+    .carrusel_fotos{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+    }
     .formato_ubicacion{
         grid-template-rows: repeat(2, auto);
         grid-template-areas:  "descripcion"
@@ -57,6 +64,6 @@
         align-items: center;   
     }
     #formulario{
-        width: 100vw;
+        width: 100%;
     }
 }

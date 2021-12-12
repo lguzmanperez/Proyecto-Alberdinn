@@ -1,3 +1,6 @@
+.h2{
+    margin-top: 3%!important;
+}
 .formato_ubicacion{
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -60,10 +63,3 @@ textarea {
     border-radius: 10px ;
 }
 /* Opiniones */
-.margen_titulo{
-    margin-top: 3%;
-}
-.formato_cards{
-    background-color: rgb(46, 42, 37);
-    color: rgb(214, 201, 158);
-}
