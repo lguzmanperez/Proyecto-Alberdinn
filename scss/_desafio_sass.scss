@@ -1,0 +1,23 @@
+.clase_0{
+    display: flex;
+    flex-direction:row;
+}
+
+@mixin ajustes ($colorDeFuente, $colorDeFondo, $margenPorcentaje) {
+    color: $colorDeFuente;    
+    background-color: $colorDeFondo;
+    margin-left: $margenPorcentaje;
+}
+
+.clase_1{
+   @include ajustes(pink, green, 4%);
+   padding: 4%
+}
+
+.clase_2{
+    @extend .clase_1;
+    border: 10px solid black;
+    font-size: 2rem;
+    margin-right: 3%;
+    padding: 0%;
+}
