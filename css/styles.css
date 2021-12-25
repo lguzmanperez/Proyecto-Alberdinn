@@ -1,7 +1,14 @@
 @charset "UTF-8";
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 body {
   background-color: #d6c99e;
-  font-family: Arial, Helvetica, sans-serif; }
+  color: #2e2a25;
+  font-family: Arial, Helvetica, sans-serif !important; }
 
 h1 {
   font-size: 2rem; }
@@ -69,9 +76,6 @@ h2 {
 .margen_carrusel {
   margin-top: 2%; }
 
-/*.secciones{
-    margin: 5% 0%;
-}*/
 .lista {
   display: inline-block;
   margin: 5px;
@@ -94,19 +98,6 @@ h2 {
   width: 10%;
   height: 10%; }
 
-/*.carrusel_fotos{
-    display: flex;
-    flex-direction: row;
-    }
-.carrusel_fotos_formato{
-    margin: 10px;
-    width: 50%;
-    height: 50%;
-}
-.carousel_mio{
-    width: 50%;
-    height: 50%;
-}*/
 .h2 {
   margin-top: 3% !important; }
 
@@ -127,46 +118,9 @@ aside {
   margin-left: 10px;
   font-size: 1.30rem; }
 
-.foto_campana {
-  width: 100%;
-  height: 100%; }
+.ultimo {
+  max-width: 50%; }
 
-.formato_contacto {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "foto_campana formulario";
-  column-gap: 5%;
-  align-items: center;
-  justify-content: space-between; }
-
-div#foto_campana {
-  grid-area: foto_campana; }
-
-div#formulario {
-  width: 70%;
-  grid-area: formulario; }
-
-.formato_formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  margin: 1%; }
-
-.formato_formulario input {
-  color: #2e2a25;
-  width: 70%;
-  margin-bottom: 2%;
-  border: #2e2a25 1px solid;
-  border-radius: 10px;
-  padding: 3px; }
-
-textarea {
-  width: 70%;
-  border: #2e2a25 1px solid;
-  border-radius: 10px; }
-
-/* Opiniones */
 .margen_titulo {
   margin-top: 3%; }
 
@@ -206,7 +160,7 @@ textarea {
     height: 50vh;
     width: 100%; } }
 
-@media screen and (max-width: 543px) {
+@media screen and (max-width: 768px) {
   .header {
     position: static; }
   .header img {
@@ -224,14 +178,10 @@ textarea {
   .formato_ubicacion {
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "descripcion" "mapa"; }
-  .formato_contacto {
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "foto_campana" "formulario"; }
+  .ultimo {
+    max-width: 100%; }
   div form {
-    align-items: center; }
-  #formulario {
-    width: 100%; } }
+    align-items: center; } }
 
 .clase_0 {
   display: flex;

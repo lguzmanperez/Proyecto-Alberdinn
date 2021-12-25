@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,7 @@
     <meta name="keywords" content="alojamiento hostel habitación pensión coworking oficina homeoffice temporada córdoba alberdi centro">
     <meta name="description" content="Alojamiento en Córdoba Capital. Nuestro objetivo es haccer de tu estadía una experiencia inolvidable. Tambien contamos con espacios de coworking para que puedas focalizarte en tu trabajo. Dejanos tu consulta aquí.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Contacto/Alberdinn</title>
 </head>
 
@@ -36,11 +35,10 @@
             </nav>
         </div>
     </header>
-    <h2 class="h2">Ubicación</h2>
+    <h1 class="h1">Ubicación</h1>
     <section class="secciones color_fuente formato_ubicacion" id="contacto">
         
         <div>
-            
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.255326223398!2d-64.22237958491102!3d-31.4070907029449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329981f0e20453%3A0xf1fd633defad819f!2sALBERDinn%20Coworking%20y%20Alojamiento!5e0!3m2!1ses!2sar!4v1636140216364!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>    
        <aside>
@@ -55,63 +53,40 @@
                 Te esperamos! Atención las 24 horas.
             </p>
        </aside>
-
     </section>
-    <h2 class= "color_fuente h2" >Contacto</h2>
-    <section  class="secciones color_fuente formato_contacto">
-        
-        <div id="foto_campana">
-            
-            <img class="foto_campana" src="./imagenes/campana.jpeg" alt="Foto campana de Alberdinn">
-        </div>
 
+    <h2 class= "color_fuente" >Contacto</h2>
+<section  class="color_fuente ">
 <!--formulario-->
-<div id="formulario" >
-    <div class="mb-3">
-        <label for="" class="form-label">Nombre y apellido</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+    <div class="contenedor_deformulario">
+        <div id="formulario" >
+            <div class="mb-3">
+                <label for="" class="form-label">Nombre y apellido</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Número de telefono</label>
+                <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">¿En qué podemos ayudarlo?</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su mensaje aquí"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </div> 
+        
     </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-    </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Número de telefono</label>
-        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
-    </div>
-    <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">¿En qué podemos ayudarlo?</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su mensaje aquí"></textarea>
-    </div>
-</div>
-       <!-- <div id="formulario">
-            <form class="formato_formulario" action="/" method="post" enctype="">
-            
-            <input  name="nombre" type="text" placeholder="Nombre">
-            
-            <input  name="email" type="email" placeholder="Email">
-            
-            <input  name="telefono" type="number" placeholder="Teléfono">
-            
-            <textarea  name="mensaje" id="" cols="30" rows="10" placeholder="Escriba aquí su mensaje"></textarea>
-            
-            <h4>Me interesa saber sobre:</h4>
+ </section> 
 
-            <label for="">Alojamiento</label> 
-            <input type="radio" name="Servicio" value="Alojamiento">
-            <label for="">Coworking</label>
-            <input type="radio" name="Servicio" value="Coworking">
-            <input type="reset" value="Limpiar formulario">
-            <input type="submit" value="Enviar formulario">
-            </form>
-        </div>-->
-    </section> 
-    
-    
-        <footer class="footer">
+    <footer class="footer">
             <img class="isologo" src="./imagenes/isologo.png" alt="isologo">
             <p class= "color_fuente">Copyright 2021 Alberdinn </p>
-        </footer>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    </body>
+</body>
 </html>

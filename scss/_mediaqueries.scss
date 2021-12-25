@@ -17,17 +17,17 @@
         height: 70%;
     }
     h1, h2 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .parrafo_ubicación{
         font-size: 0.80rem;
     }
-    .foto_campana{
-        height: 50vh;
-        width: 100%;
+    .contenedor_deformulario{
+        max-width: 70%;
     }
+    
 } 
-@media screen and (max-width: 543px) {
+@media screen and (max-width: 768px) {
     .header{
         position: static;
     }
@@ -53,17 +53,13 @@
         grid-template-areas:  "descripcion"
                                 "mapa"
     }
+    .contenedor_deformulario{
+        max-width: 100%;
+    }
     
-    .formato_contacto{
-        display: grid;
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas: "foto_campana"
-                              "formulario" ; 
-       }
     div form {
         align-items: center;   
     }
-    #formulario{
-        width: 100%;
-    }
+
+   
 }
